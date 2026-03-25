@@ -1,0 +1,20 @@
+# Mesothelioma Risks
+
+> Independent educational resource covering mesothelioma, asbestos exposure pathways, occupational risk, latency, regulatory history, and public-health context.
+
+## About
+
+Mesothelioma Risks is a neutral, publisher-style informational authority site. It does not provide legal advice, medical advice, case intake, lead generation, or referral services. All content is built on verified public-health data from the CDC, NCI, EPA, OSHA, and the American Cancer Society.
+
+## Articles
+
+- https://mesotheliomarisks.com/articles/what-is-mesothelioma — Plain-language overview of mesothelioma, where it develops, how it is classified, and why asbestos exposure is the central risk factor.
+- https://mesotheliomarisks.com/articles/how-asbestos-exposure-happens — How asbestos fibers become airborne, where exposures historically occurred, and why disturbed materials matter most.
+- https://mesotheliomarisks.com/articles/occupational-asbestos-exposure-risks — The jobs, industries, and work environments historically associated with elevated asbestos exposure and later mesothelioma risk.
+- https://mesotheliomarisks.com/articles/mesothelioma-latency-explained — Why mesothelioma often appears decades after exposure and why earlier work and environmental history still matter.
+- https://mesotheliomarisks.com/articles/industries-linked-to-asbestos-exposure — The industries where asbestos was widely used and where exposure risk was historically elevated.
+- https://mesotheliomarisks.com/articles/secondary-asbestos-exposure — How asbestos fibers can be carried from work sites into households and why take-home exposure remains a recognized risk factor.
+- https://mesotheliomarisks.com/articles/older-homes-renovation-asbestos — Why asbestos in older building materials becomes a concern when damaged or disturbed during repair, renovation, or demolition.
+- https://mesotheliomarisks.com/articles/asbestos-in-schools-public-buildings — Why asbestos remains relevant in older public buildings and how federal management requirements work in school settings.
+- https://mesotheliomarisks.com/articles/us-asbestos-regulatory-timeline — The shift from widespread asbestos use to modern workplace controls, environmental oversight, and legacy risk management.
+- https://mesotheliomarisks.com/articles/common-symptoms-and-diagnosis — A plain-language summary of mesothelioma symptoms and why diagnosis depends on imaging and tissue testing.
