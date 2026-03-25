@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /future-articles/
 
-Sitemap: https://mesothelioma-risks.com/sitemap.xml
+Sitemap: https://mesotheliomarisks.com/sitemap.xml
