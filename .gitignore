@@ -14,3 +14,11 @@ node_modules/
 # Temporary files
 *.tmp
 *.log
+
+# Planning docs
+docs/
+About_Page_Content_Spec.md
+Research_and_Sources_Page_Content_Spec.md
+
+# Claude Code config
+.claude/
