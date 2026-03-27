@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=DM+Mono:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Manrope:wght@300;400;500;600;700&display=swap');
 
 :root{
   --bg:#fdfaf4;
@@ -20,10 +20,10 @@
   --radius-md:20px;
   --radius-sm:14px;
   --max:1180px;
-  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
-  --font-serif: 'Inter', system-ui, -apple-system, sans-serif;
-  --font-accent: 'Inter', system-ui, -apple-system, sans-serif;
-  --font-mono: 'DM Mono', ui-monospace, monospace;
+  --font-sans: "Manrope", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-serif: "Instrument Serif", Georgia, serif;
+  --font-accent: var(--font-serif);
+  --font-mono: var(--font-sans);
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
@@ -35,19 +35,29 @@ body{
     linear-gradient(180deg,#f8f4ec 0%,var(--bg) 60%,#f1ebdf 100%);
   color:var(--ink);
   font-family: var(--font-sans);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.75;
+  letter-spacing: 0.002em;
   -webkit-font-smoothing:antialiased;
   text-rendering:optimizeLegibility;
 }
 h1, h2, h3, h4, h5, h6, .brand-name {
-  font-family: var(--font-accent);
+  font-family: var(--font-serif);
   font-style: normal;
+}
+h1 { font-size: clamp(2.75rem, 5vw, 4.75rem); font-weight: 400; line-height: 1.02; letter-spacing: -0.03em; }
+h2 { font-size: clamp(2.1rem, 4vw, 3.2rem); font-weight: 400; line-height: 1.08; letter-spacing: -0.025em; }
+h3 { font-size: clamp(1.6rem, 3vw, 2.2rem); font-weight: 400; line-height: 1.12; letter-spacing: -0.02em; }
+h4 { font-size: 1.25rem; font-weight: 600; line-height: 1.2; letter-spacing: -0.01em; }
+
+.brand-name {
   font-weight: 800;
   letter-spacing: -0.03em;
 }
+
 main h2, main h3, .card h3 {
-  font-family: var(--font-sans);
-  font-style: normal;
-  font-weight: 700;
+  font-family: var(--font-serif);
 }
 a{color:inherit;text-decoration:none}
 a:hover{text-decoration:none}
@@ -102,15 +112,15 @@ a:hover{text-decoration:none}
 .eyebrow{
   font-family: var(--font-mono);
   display:inline-flex;align-items:center;gap:10px;padding:8px 16px;border-radius:999px;
-  background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.12);font-size:.65rem;
-  text-transform:uppercase;letter-spacing:.15em;font-weight:400;color:var(--sand);margin-bottom:24px;
+  background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.12);font-size:0.7rem;
+  text-transform:uppercase;letter-spacing:0.14em;font-weight:600;color:var(--sand);margin-bottom:24px;
   backdrop-filter: blur(8px);
 }
-h1{margin:0;max-width:900px;font-size:clamp(2.6rem,5vw,4rem);line-height:1;letter-spacing:-.04em;font-weight:800;color:var(--ink)}
+h1{margin:0;max-width:900px;color:var(--ink)}
 .hero-panel h1{color:#fdfbf7;text-shadow: 0 2px 20px rgba(0,0,0,.15)}
-.hero-copy{margin-top:18px;max-width:760px;color:rgba(245,239,227,.8);font-size:1.1rem;line-height:1.55;font-weight:400;font-family: var(--font-sans)}
+.hero-copy{margin-top:18px;max-width:760px;color:rgba(245,239,227,.8);font-size:1.125rem;line-height:1.75;font-weight:400;font-family: var(--font-sans)}
 .hero-actions{display:flex;flex-wrap:wrap;gap:16px;margin-top:24px}
-.btn{display:inline-flex;align-items:center;justify-content:center;min-height:54px;padding:0 24px;border-radius:12px;font-size:.95rem;font-weight:600;letter-spacing:.01em;transition:all .3s ease}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:54px;padding:0 24px;border-radius:12px;font-family: var(--font-sans);font-size:.95rem;font-weight:600;letter-spacing:.01em;transition:all .3s ease}
 .btn-primary{background:linear-gradient(180deg,#dfc8a5,#c49a54);color:#1a1612;box-shadow:inset 0 1px 0 rgba(255,255,255,.4),0 12px 24px rgba(0,0,0,.15);border:1px solid #b38a49}
 .btn-secondary{color:#fdfbf7;border:1px solid rgba(255,255,255,.15);background:rgba(255,255,255,.04);backdrop-filter:blur(4px)}
 .btn-primary:hover{transform:translateY(-2px);box-shadow:inset 0 1px 0 rgba(255,255,255,.6),0 16px 32px rgba(0,0,0,.2);filter:brightness(1.05)}
@@ -162,8 +172,8 @@ h1{margin:0;max-width:900px;font-size:clamp(2.6rem,5vw,4rem);line-height:1;lette
 .text-center { text-align: center; }
 .section{position:relative;z-index:1;padding:60px 0 80px}
 .section-head{display:flex;align-items:end;justify-content:space-between;gap:40px;margin-bottom:48px}
-.section h2{font-size:clamp(2.4rem,4vw,3.8rem);line-height:1.05;letter-spacing:-.03em;font-weight:400;margin:0}
-.section-intro{max-width:640px;color:var(--muted);font-size:1.05rem;line-height:1.65;font-family: var(--font-sans);font-style: normal;font-weight:400;opacity: 0.85;}
+.section h2{margin:0}
+.section-intro{max-width:640px;color:var(--muted);font-size:1.125rem;line-height:1.75;font-family: var(--font-sans);font-style: normal;font-weight:400;opacity: 0.85;}
 .card-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
 .card{
   position:relative;
@@ -198,7 +208,7 @@ h1{margin:0;max-width:900px;font-size:clamp(2.6rem,5vw,4rem);line-height:1;lette
   box-shadow: 0 2px 4px rgba(196,154,84,.08);
   margin-bottom: 20px;
 }
-.card h3{font-size:1.5rem;letter-spacing:-.015em;font-weight:600;line-height:1.2;margin:0 0 12px; transition: color .3s ease;}
+.card h3{margin:0 0 12px; transition: color .3s ease;}
 .card h3 a:after { content: ""; position: absolute; inset: 0; z-index: 10; }
 .card:hover h3 { color: var(--gold-2); }
 .card p{color:var(--muted);line-height:1.75;margin:0 0 24px; font-size: 0.98rem; flex-grow: 1;}
@@ -238,12 +248,12 @@ h1{margin:0;max-width:900px;font-size:clamp(2.6rem,5vw,4rem);line-height:1;lette
   box-shadow:0 4px 6px -1px rgba(0,0,0,.03),0 12px 32px -4px rgba(18,15,11,.06),inset 0 1px 0 rgba(255,255,255,1);
 }
 .kicker{display:inline-flex;align-items:center;gap:8px;padding:8px 12px;border-radius:999px;background:#efe3ce;color:#70511f;font-family:var(--font-mono);font-size:.72rem;text-transform:uppercase;letter-spacing:.12em;font-weight:500}
-.page h1{font-size:clamp(2.5rem,4vw,4.4rem);line-height:1.05;letter-spacing:-.02em;font-weight:500;margin:18px 0 16px;color:var(--ink)}
-.dek{font-size:1.15rem;color:var(--muted);line-height:1.74;max-width:58ch}
+.page h1{margin:18px 0 16px;color:var(--ink)}
+.dek{font-size:1.125rem;font-weight:400;color:var(--muted);line-height:1.75;max-width:58ch}
 .meta{display:flex;gap:12px;flex-wrap:wrap;font-size:.92rem;color:var(--muted);padding:16px 0 22px;border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin:20px 0 26px}
-main p{font-size:1.2rem;line-height:1.8;color:#22201f;margin:1.5rem 0;font-weight: 400;}
-main h2{font-size:2.4rem;line-height:1.1;letter-spacing:-.015em;font-weight:700;margin:3.5rem 0 1rem}
-main h3{font-family: var(--font-mono); font-size:.95rem;line-height:1.2;letter-spacing:0.08em;font-weight:500;margin:2rem 0 .8rem; text-transform: uppercase; color: var(--gold-2);}
+main p{font-size:1.125rem;line-height:1.75;color:#22201f;margin:1.5rem 0;font-weight: 400;}
+main h2{margin:3.5rem 0 1rem}
+main h3{font-family: var(--font-sans); font-size:0.7rem;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;margin:2rem 0 .8rem; color: var(--gold-2);}
 main ul{padding-left:1.5rem}
 main li{margin:.75rem 0;line-height:1.75;font-size: 1.15rem;}
 .highlight{
@@ -267,7 +277,16 @@ main li{margin:.75rem 0;line-height:1.75;font-size: 1.15rem;}
 }
 .footer-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:32px}
 .small{font-size:.85rem;color:var(--muted);line-height:1.6;margin-top:12px}
-.note{font-size:.85rem;color:var(--muted)}
+.note{font-size:.85rem;line-height:1.6;color:var(--muted)}
+
+blockquote, .quote, .emphasis {
+  font-family: var(--font-serif);
+  font-size: clamp(1.4rem, 2.5vw, 2rem);
+  font-weight: 500;
+  line-height: 1.3;
+  letter-spacing: -0.015em;
+  margin: 1.5rem 0;
+}
 .codeblock{background:#1f2326;color:#f3f3f3;padding:16px;border-radius:18px;overflow:auto;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.9rem}
 
 /* Level Up: Premium Imagery & Authority Badges */
